@@ -1,0 +1,176 @@
+{
+  "today": {
+    "clients": [
+      { "new_clients": 5, "sells": 5 },
+      { "new_clients": 0, "sells": 0 },
+      { "new_clients": 10, "sells": 0 },
+      { "new_clients": 15, "sells": 10 },
+      { "new_clients": 2, "sells": 1 },
+      { "new_clients": 20, "sells": 15 },
+      { "new_clients": 25, "sells": 14 },
+      { "new_clients": 15, "sells": 20 },
+      { "new_clients": 14, "sells": 3 },
+      { "new_clients": 2, "sells": 9 },
+      { "new_clients": 3, "sells": 7 },
+      { "new_clients": 6, "sells": 4 },
+      { "new_clients": 7, "sells": 1 },
+      { "new_clients": 25, "sells": 2 },
+      { "new_clients": 2, "sells": 3 },
+      { "new_clients": 12, "sells": 6 },
+      { "new_clients": 13, "sells": 9 },
+      { "new_clients": 2, "sells": 8 },
+      { "new_clients": 1, "sells": 7 },
+      { "new_clients": 4, "sells": 5 },
+      { "new_clients": 6, "sells": 3 },
+      { "new_clients": 8, "sells": 4 },
+      { "new_clients": 10, "sells": 6 },
+      { "new_clients": 1, "sells": 5 }
+    ],
+    "transactions": [
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 }
+    ]
+  },
+  "this_month": {
+    "clients": [
+      { "new_clients": 200, "sells": 2000 },
+      { "new_clients": 300, "sells": 4000 },
+      { "new_clients": 400, "sells": 3000 },
+      { "new_clients": 500, "sells": 6000 }
+    ],
+    "transactions": [
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 }
+    ]
+  },
+  "week": {
+    "clients": [
+      { "new_clients": 200, "sells": 2000 },
+      { "new_clients": 300, "sells": 4000 },
+      { "new_clients": 400, "sells": 3000 },
+      { "new_clients": 500, "sells": 6000 },
+      { "new_clients": 600, "sells": 5000 },
+      { "new_clients": 700, "sells": 6000 },
+      { "new_clients": 300, "sells": 7000 }
+    ],
+    "transactions": [
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 }
+    ]
+  },
+  "six_months": {
+    "clients": [
+      { "new_clients": 2000, "sells": 20000 },
+      { "new_clients": 3000, "sells": 40000 },
+      { "new_clients": 4000, "sells": 30000 },
+      { "new_clients": 5000, "sells": 60000 },
+      { "new_clients": 6000, "sells": 50000 },
+      { "new_clients": 7000, "sells": 60000 }
+    ],
+    "transactions": [
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 }
+    ]
+  },
+  "year_to_date": {
+    "clients": [
+      { "new_clients": 200, "sells": 2000 },
+      { "new_clients": 300, "sells": 4000 },
+      { "new_clients": 400, "sells": 3000 },
+      { "new_clients": 500, "sells": 6000 },
+      { "new_clients": 600, "sells": 5000 },
+      { "new_clients": 700, "sells": 6000 },
+      { "new_clients": 700, "sells": 6000 },
+      { "new_clients": 700, "sells": 6000 },
+      { "new_clients": 700, "sells": 6000 },
+      { "new_clients": 700, "sells": 6000 },
+      { "new_clients": 700, "sells": 6000 },
+      { "new_clients": 700, "sells": 6000 }
+    ],
+    "transactions": [
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 }
+    ]
+  },
+  "one_year": {
+    "clients": [
+      { "new_clients": 200, "sells": 2000 },
+      { "new_clients": 300, "sells": 4000 },
+      { "new_clients": 400, "sells": 3000 },
+      { "new_clients": 500, "sells": 1200 },
+      { "new_clients": 600, "sells": 4200 },
+      { "new_clients": 700, "sells": 3500 },
+      { "new_clients": 700, "sells": 4500 },
+      { "new_clients": 700, "sells": 6500 },
+      { "new_clients": 700, "sells": 2500 },
+      { "new_clients": 700, "sells": 2300 },
+      { "new_clients": 700, "sells": 6000 },
+      { "new_clients": 700, "sells": 2200 }
+    ],
+    "transactions": [
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 },
+      { "total_money": 500000, "sells": 2500, "transactions": 2400 }
+    ]
+  },
+  "max": {
+    "clients": [],
+    "transactions": []
+  },
+  "personalized": {
+    "clients": [],
+    "transactions": []
+  }
+}
