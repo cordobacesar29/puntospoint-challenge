@@ -24,31 +24,32 @@ export const Navbar = () => {
   };
   return (
     <Box
-      sx={{
-        display: "flex",
-        alignItems: "center",
-      }}
+      display={"flex"}
+      alignItems={"center"}
     >
       <Box
-        style={{
-          display: "flex",
-          gap: "25px",
-          justifyContent: "center",
-          width: "80%",
-        }}
+        display={{ base: "none", md: "flex"}}
+        gap={"25px"}
+        justifyContent={"center"}
+        width={"80%"}
       >
         {links.map((el) => {
           return (
             <Link
+              key={el.name}
               href={el.href}
               style={{
                 textDecoration: "none",
                 color:
-                  pathname === el.href ? "white" : Colors.text_violet_primary,
+                  pathname === el.href
+                    ? Colors.bg_color_primary
+                    : Colors.text_violet_primary,
                 fontWeight: 500,
                 fontSize: "14px",
                 background:
-                  pathname === el.href ? Colors.text_violet_primary : "white",
+                  pathname === el.href
+                    ? Colors.text_violet_primary
+                    : Colors.bg_color_primary,
                 padding: "10px 24px",
                 borderRadius: "24px",
               }}
@@ -58,20 +59,26 @@ export const Navbar = () => {
           );
         })}
       </Box>
-      <Box sx={{width:'20%'}}>
+      <Box sx={{ width: "20%" }}>
         <List
           component="nav"
           aria-labelledby="nested-list-subheader"
+          sx={{ width: "max-content", minWidth: "320px" }}
         >
-          <ListItemButton style={{ padding: "none" }} onClick={handleClick}>
-            <ListItemText
-              style={{ padding: "none" }}
-              primary="Name"
-            />
+          <ListItemButton onClick={handleClick}>
+            <ListItemText primary="Name" />
             {open ? <ExpandLess /> : <ExpandMore />}
           </ListItemButton>
           <Collapse in={open} timeout="auto" unmountOnExit>
-            <List component="div" style={{position: 'absolute'}}>
+            <List
+              component="div"
+              style={{
+                position: "absolute",
+                backgroundColor: Colors.bg_color_primary,
+                width: "max-content",
+                minWidth: "320px",
+              }}
+            >
               <ListItemButton sx={{ pl: 4 }}>
                 <ListItemText primary="Editar perfil" />
               </ListItemButton>
@@ -81,6 +88,20 @@ export const Navbar = () => {
                 </ListItemIcon>
                 <ListItemText primary="Cerrar sesión" />
               </ListItemButton>
+              <Box
+                display={{ base: "flex", md: "none" }}
+                flexDirection={"column"}
+              >
+                {links.map((el)=> {
+                  return (
+                  <ListItemButton sx={{ pl: 4 }}>
+                    <Link style={{ textDecoration: "none" }} href={el.href}>
+                      <ListItemText primary={el.name} />
+                    </Link>
+                  </ListItemButton>
+                  )
+                })}
+              </Box>
             </List>
           </Collapse>
         </List>
