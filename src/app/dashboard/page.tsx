@@ -1,10 +1,18 @@
-import React from 'react'
-import{ Container} from '@mui/material'
+"use client";
+import React, { lazy } from "react";
+import { Box } from "@mui/material";
 
-function Dashboard() {
+export default function Dashboard() {
   return (
-    <Container>dashboard</Container>
-  )
+    <Box sx={{ display: "flex", padding: "2rem" }}>
+      <MainContainer />
+      <Box sx={{ width: "20%" }}>asds dasd</Box>
+    </Box>
+  );
 }
 
-export default Dashboard
+const MainContainer = lazy(() =>
+  import("../../components/MainContainer").then((el) => ({
+    default: el.MainContainer,
+  }))
+);
