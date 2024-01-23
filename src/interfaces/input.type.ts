@@ -1,3 +1,4 @@
+// inputs enum
 export enum InputType {
   TODAY = "today",
   WEEK = "week",
@@ -8,6 +9,36 @@ export enum InputType {
   MAX = "max",
   PERSONALIZED = "personalized",
 }
+
+// filter enum
+export enum FilterType {
+  CLIENTS = "clients",
+  TRANSACTIONS = "transactions",
+  MONEY = "money",
+  CASHBACK = "cashback",
+}
+
+// filters type
+export const filters = [
+  {
+    label: "Clientes",
+    value: FilterType.CLIENTS,
+  },
+  {
+    label: "Transacciones",
+    value: FilterType.TRANSACTIONS,
+  },
+  {
+    label: "Dinero",
+    value: FilterType.MONEY,
+  },
+  {
+    label: "Cashback",
+    value: FilterType.CASHBACK,
+  },
+];
+
+// labels arrays
 
 export const HOURS = [
   "00:00",
@@ -45,10 +76,28 @@ export const DAYS = [
   "Sábado",
   "Domingo",
 ];
-export const WEEKS = ["Semana 1","Semana 2","Semana 3","Semana 4"];
+export const WEEKS = ["Semana 1", "Semana 2", "Semana 3", "Semana 4"];
 
 export const MONTHS = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio"];
 
-export const YTD = ["2023","2024"];
+export const YTD = ["2023", "2024"];
 
-export const YEAR = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio","Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]
+export const YEAR = [
+  "Enero",
+  "Febrero",
+  "Marzo",
+  "Abril",
+  "Mayo",
+  "Junio",
+  "Julio",
+  "Agosto",
+  "Septiembre",
+  "Octubre",
+  "Noviembre",
+  "Diciembre",
+];
+
+export enum SwitchType {
+  GRAPHIC = "Gráfico",
+  PULSE = "Pulso"
+}
