@@ -94,7 +94,7 @@ export const Navbar = () => {
               >
                 {links.map((el)=> {
                   return (
-                  <ListItemButton sx={{ pl: 4 }}>
+                  <ListItemButton sx={{ pl: 4 }} key={el.name}>
                     <Link style={{ textDecoration: "none" }} href={el.href}>
                       <ListItemText primary={el.name} />
                     </Link>
