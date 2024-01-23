@@ -1,0 +1,301 @@
+{
+  "today": {
+    "clients": [
+      { "new_clients": 15, "sells": 51 },
+      { "new_clients": 11, "sells": 8 },
+      { "new_clients":10, "sells": 10 },
+      { "new_clients": 15, "sells": 11 },
+      { "new_clients": 12, "sells": 11 },
+      { "new_clients": 12, "sells": 11 },
+      { "new_clients": 25, "sells": 11 },
+      { "new_clients": 15, "sells": 12 },
+      { "new_clients": 14, "sells": 13 },
+      { "new_clients": 12, "sells": 91 },
+      { "new_clients": 13, "sells": 71 },
+      { "new_clients": 16, "sells": 41 },
+      { "new_clients": 17, "sells": 11 },
+      { "new_clients": 12, "sells": 12 },
+      { "new_clients": 12, "sells": 31 },
+      { "new_clients": 92, "sells": 16 },
+      { "new_clients": 83, "sells": 19 },
+      { "new_clients": 12, "sells": 81 },
+      { "new_clients": 11, "sells": 71 },
+      { "new_clients": 14, "sells": 51 },
+      { "new_clients": 16, "sells": 31 },
+      { "new_clients": 18, "sells": 41 },
+      { "new_clients": 110, "sells": 16 },
+      { "new_clients": 11, "sells": 51 }
+    ],
+    "transactions": [
+      {"transactions": 21 },
+      { "transactions": 26 },
+      {"transactions": 15 },
+      { "transactions": 28 },
+      { "transactions": 35 },
+      { "transactions": 140 },
+      { "transactions": 20 },
+      { "transactions": 40 },
+      { "transactions": 64 },
+      { "transactions": 25 },
+      { "transactions": 55 },
+      { "transactions": 42 },
+      { "transactions": 12 },
+      { "transactions": 15 },
+      { "transactions": 80 },
+      { "transactions": 70 },
+      { "transactions": 24 },
+      { "transactions": 180 },
+      { "transactions": 190 },
+      { "transactions": 90 },
+      { "transactions": 100 },
+      { "transactions": 15 },
+      { "transactions": 150 },
+      { "transactions": 150 }
+    ],
+    "money": [
+      {"total_money": 1500, "sells": 1200},
+      {"total_money": 2500, "sells": 2300},
+      {"total_money": 3000, "sells": 3250},
+      {"total_money": 3300, "sells": 3300},
+      {"total_money": 4500, "sells": 4350},
+      {"total_money": 4700, "sells": 4400},
+      {"total_money": 5000, "sells": 5450},
+      {"total_money": 5600, "sells": 5500},
+      {"total_money": 6200, "sells": 5495},
+      {"total_money": 6200, "sells": 5520},
+      {"total_money": 6700, "sells": 5600},
+      {"total_money": 6600, "sells": 5700},
+      {"total_money": 6000, "sells": 5750},
+      {"total_money": 6200, "sells": 5800},
+      {"total_money": 6300, "sells": 5950},
+      {"total_money": 6500, "sells": 5120},
+      {"total_money": 6600, "sells": 5240},
+      {"total_money": 6400, "sells": 5350},
+      {"total_money": 6800, "sells": 5400},
+      {"total_money": 7000, "sells": 6500},
+      {"total_money": 7100, "sells": 6600},
+      {"total_money": 7050, "sells": 6550},
+      {"total_money": 7150, "sells": 7560},
+      {"total_money": 7200, "sells": 7450}
+    ],
+    "cashback": [
+      {"generated": 1200, "accumulated": 2500, "total": 1525},
+      {"generated": 1100, "accumulated": 2600, "total": 1625},
+      {"generated": 1500, "accumulated": 2700, "total": 1725},
+      {"generated": 1600, "accumulated": 2800, "total": 1825},
+      {"generated": 1400, "accumulated": 3000, "total": 1925},
+      {"generated": 1700, "accumulated": 3100, "total": 3020},
+      {"generated": 1800, "accumulated": 3200, "total": 3220},
+      {"generated": 1900, "accumulated": 3300, "total": 3120},
+      {"generated": 2100, "accumulated": 3200, "total": 3320},
+      {"generated": 2200, "accumulated": 3100, "total": 3420},
+      {"generated": 2300, "accumulated": 3300, "total": 3520},
+      {"generated": 2400, "accumulated": 3400, "total": 3520},
+      {"generated": 3300, "accumulated": 3600, "total": 3620},
+      {"generated": 3100, "accumulated": 3500, "total": 3720},
+      {"generated": 3200, "accumulated": 3600, "total": 3920},
+      {"generated": 3300, "accumulated": 3700, "total": 3820},
+      {"generated": 3400, "accumulated": 3800, "total": 4220},
+      {"generated": 3500, "accumulated": 3700, "total": 4020},
+      {"generated": 3600, "accumulated": 3900, "total": 4120},
+      {"generated": 3700, "accumulated": 4000, "total": 4220},
+      {"generated": 3800, "accumulated": 4000, "total": 4320},
+      {"generated": 3700, "accumulated": 4100, "total": 4120},
+      {"generated": 3600, "accumulated": 4300, "total": 4420},
+      {"generated": 3500, "accumulated": 4200, "total": 4220}
+    ]
+  },
+  "week": {
+    "clients": [
+      { "new_clients": 200, "sells": 2000 },
+      { "new_clients": 300, "sells": 4000 },
+      { "new_clients": 400, "sells": 3000 },
+      { "new_clients": 500, "sells": 6000 },
+      { "new_clients": 600, "sells": 5000 },
+      { "new_clients": 700, "sells": 6000 },
+      { "new_clients": 300, "sells": 7000 }
+    ],
+    "transactions": [
+      {"transactions": 1050 },
+      {"transactions": 9500 },
+      {"transactions": 1200 },
+      {"transactions": 8500 },
+      {"transactions": 9900 },
+      {"transactions": 7800 },
+      {"transactions": 7400 }
+    ],
+    "cashback": [
+      {"generated": 12000, "accumulated": 11500, "total": 12250},
+      {"generated": 14000, "accumulated": 12500, "total": 14250},
+      {"generated": 13000, "accumulated": 13500, "total": 13250},
+      {"generated": 15000, "accumulated": 14500, "total": 12750},
+      {"generated": 16000, "accumulated": 15500, "total": 14450},
+      {"generated": 15000, "accumulated": 15500, "total": 13250},
+      {"generated": 17000, "accumulated": 16500, "total": 15250}
+    ],
+    "money": [
+      {"total_money": 15000, "sells": 7500},
+      {"total_money": 21000, "sells": 8500},
+      {"total_money": 35000, "sells": 9500},
+      {"total_money": 41000, "sells": 10500},
+      {"total_money": 53000, "sells": 12500},
+      {"total_money": 42000, "sells": 11500},
+      {"total_money": 51000, "sells": 12100}
+    ]
+  },
+  "this_month": {
+    "clients": [
+      { "new_clients": 200, "sells": 2000 },
+      { "new_clients": 300, "sells": 4000 },
+      { "new_clients": 400, "sells": 3000 },
+      { "new_clients": 500, "sells": 6000 }
+    ],
+    "transactions": [
+      {"transactions": 9000 },
+      {"transactions": 7500 },
+      {"transactions": 2500 },
+      {"transactions": 1200 }
+    ],
+    "cashback": [
+      {"generated": 25000, "accumulated": 22000, "total": 50250},
+      {"generated": 31000, "accumulated": 23000, "total": 52250},
+      {"generated": 33000, "accumulated": 24500, "total": 48250},
+      {"generated": 35000, "accumulated": 24200, "total": 52750}
+    ],
+    "money": [
+      {"total_money": 25000, "sells": 25000},
+      {"total_money": 31000, "sells": 26000},
+      {"total_money": 33000, "sells": 24000},
+      {"total_money": 35000, "sells": 27000}
+    ]
+  },
+  "six_months": {
+    "clients": [
+      { "new_clients": 2000, "sells": 12000 },
+      { "new_clients": 3000, "sells": 14000 },
+      { "new_clients": 4000, "sells": 13000 },
+      { "new_clients": 5000, "sells": 16000 },
+      { "new_clients": 6000, "sells": 15000 },
+      { "new_clients": 7000, "sells": 16000 }
+    ],
+    "transactions": [
+      { "transactions": 19400 },
+      { "transactions": 20400 },
+      { "transactions": 22400 },
+      { "transactions": 21400 },
+      { "transactions": 21500 },
+      { "transactions": 22300 }
+    ],
+    "cashback": [
+      {"generated": 50000, "accumulated": 71200, "total": 52500},
+      {"generated": 52000, "accumulated": 71400, "total": 52500},
+      {"generated": 53000, "accumulated": 72100, "total": 52500},
+      {"generated": 54000, "accumulated": 72200, "total": 52500},
+      {"generated": 54000, "accumulated": 73200, "total": 52500},
+      {"generated": 52000, "accumulated": 72900, "total": 52500}
+    ],
+    "money": [
+      {"total_money": 123000, "sells": 10000},
+      {"total_money": 115000, "sells": 12550},
+      {"total_money": 123000, "sells": 25500},
+      {"total_money": 124000, "sells": 20050},
+      {"total_money": 126000, "sells": 50050},
+      {"total_money": 119000, "sells": 40400}
+    ]
+  },
+  "year_to_date": {
+    "clients": [
+      { "new_clients": 200, "sells": 2000 },
+      { "new_clients": 300, "sells": 4000 }
+    ],
+    "transactions": [
+      { "transactions": 24000 },
+      { "transactions": 55000 }
+    ],
+    "cashback": [
+      {"generated": 500000, "accumulated": 2500, "total": 502500},
+      {"generated": 500000, "accumulated": 2500, "total": 502500}
+    ],
+    "money": [
+      {"total_money": 780000, "sells": 320000},
+      {"total_money": 800000, "sells": 480000}
+    ]
+  },
+  "one_year": {
+    "clients": [
+      { "new_clients": 2000, "sells": 12000 },
+      { "new_clients": 3000, "sells": 14000 },
+      { "new_clients": 4000, "sells": 13000 },
+      { "new_clients": 5000, "sells": 16000 },
+      { "new_clients": 6000, "sells": 15000 },
+      { "new_clients": 7000, "sells": 16000 },
+      { "new_clients": 2000, "sells": 12000 },
+      { "new_clients": 3000, "sells": 14000 },
+      { "new_clients": 4000, "sells": 13000 },
+      { "new_clients": 5000, "sells": 16000 },
+      { "new_clients": 6000, "sells": 15000 },
+      { "new_clients": 7000, "sells": 16000 }
+    ],
+    "transactions": [
+      { "transactions": 19400 },
+      { "transactions": 20400 },
+      { "transactions": 22400 },
+      { "transactions": 21400 },
+      { "transactions": 21500 },
+      { "transactions": 22300 },
+      { "transactions": 19400 },
+      { "transactions": 20400 },
+      { "transactions": 22400 },
+      { "transactions": 21400 },
+      { "transactions": 21500 },
+      { "transactions": 22300 }
+    ],
+    "money": [
+      {"total_money": 123000, "sells": 10000},
+      {"total_money": 115000, "sells": 12550},
+      {"total_money": 123000, "sells": 25500},
+      {"total_money": 124000, "sells": 20050},
+      {"total_money": 126000, "sells": 50050},
+      {"total_money": 119000, "sells": 40400},
+      {"total_money": 123000, "sells": 10000},
+      {"total_money": 115000, "sells": 12550},
+      {"total_money": 123000, "sells": 25500},
+      {"total_money": 124000, "sells": 20050},
+      {"total_money": 126000, "sells": 50050},
+      {"total_money": 119000, "sells": 40400}
+    ],
+    "cashback": [
+      {"generated": 50000, "accumulated": 71200, "total": 52500},
+      {"generated": 52000, "accumulated": 71400, "total": 52500},
+      {"generated": 53000, "accumulated": 72100, "total": 52500},
+      {"generated": 54000, "accumulated": 72200, "total": 52500},
+      {"generated": 54000, "accumulated": 73200, "total": 52500},
+      {"generated": 52000, "accumulated": 72900, "total": 52500},
+      {"generated": 50000, "accumulated": 71200, "total": 52500},
+      {"generated": 52000, "accumulated": 71400, "total": 52500},
+      {"generated": 53000, "accumulated": 72100, "total": 52500},
+      {"generated": 54000, "accumulated": 72200, "total": 52500},
+      {"generated": 54000, "accumulated": 73200, "total": 52500},
+      {"generated": 52000, "accumulated": 72900, "total": 52500}
+    ]
+  },
+  "max": {
+    "clients": [],
+    "transactions": []
+  },
+  "personalized": {
+    "clients": [],
+    "transactions": []
+  },
+  "pulse": {
+    "Octubre": [
+      { "clients": 544334,"total_money": 800000, "sells": 480000, "cashback_accumulated": 2500, "cashback_01": 2500, "cashback_10": 2500, "cashback_20": 2500}
+  ],
+    "Noviembre": [
+      { "clients": 544334,"total_money": 800000, "sells": 480000, "cashback_accumulated": 2500, "cashback_01": 2500, "cashback_10": 2500, "cashback_20": 2500}
+    ],
+    "Diciembre": [
+      { "clients": 544334,"total_money": 800000, "sells": 480000, "cashback_accumulated": 2500, "cashback_01": 2500, "cashback_10": 2500, "cashback_20": 2500}
+    ]
+  }
+}
