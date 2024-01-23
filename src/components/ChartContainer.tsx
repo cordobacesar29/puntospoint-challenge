@@ -1,23 +1,33 @@
+import { getData } from "@/app/api/dataAPI";
 import {
-  getDataByWeek,
-  getDataByOneYear,
-  getDataBySixMont,
-  getDataByYTD,
-  getDataMax,
-  getDataPersonalized,
-  getDataToday,
-  getDataByThisMonth,
-} from "@/app/api/dataAPI";
-import { IClient } from "@/interfaces/client.type";
-import { DAYS, HOURS, InputType, MONTHS, WEEKS, YEAR, YTD } from "@/interfaces/input.type";
+  DAYS,
+  FilterType,
+  HOURS,
+  InputType,
+  MONTHS,
+  WEEKS,
+  YEAR,
+  YTD,
+} from "@/interfaces/input.type";
 import { Box } from "@mui/material";
 import { useQuery } from "@tanstack/react-query";
 import { HorizontalBarChart } from "./HorizontalBarChart";
+import Loading from "./Loading";
 
 interface Props {
   inputValue: InputType;
+  filterSelected: FilterType | null;
+  filterCashSelected: FilterType | null;
 }
-export const ChartContainer = ({ inputValue }: Props) => {
+export const ChartContainer = ({
+  inputValue,
+  filterCashSelected,
+  filterSelected,
+}: Props) => {
+  const { data, isLoading } = useQuery({
+    queryKey: [inputValue],
+    queryFn: () => getData(inputValue),
+  });
   const labels = () => {
     switch (inputValue) {
       case InputType.TODAY:
@@ -36,35 +46,29 @@ export const ChartContainer = ({ inputValue }: Props) => {
         return HOURS;
     }
   };
-  const { data, error, isLoading } = useQuery({
-    queryKey: [inputValue],
-    queryFn: () => {
-      switch (inputValue) {
-        case InputType.TODAY:
-          return getDataToday();
-        case InputType.WEEK:
-          return getDataByWeek();
-        case InputType.THIS_MONTH:
-          return getDataByThisMonth();
-        case InputType.SIX_MONTHS:
-          return getDataBySixMont();
-        case InputType.YEAR_TO_DATE:
-          return getDataByYTD();
-        case InputType.ONE_YEAR:
-          return getDataByOneYear();
-        case InputType.MAX:
-          return getDataMax();
-        case InputType.PERSONALIZED:
-          return getDataPersonalized();
-        default:
-          return getDataToday();
-      }
-    },
-  });
-  console.log(data?.clients);
+
+  if(isLoading) return <Loading/>
   return (
-    <Box padding={"2rem"}>
-      <HorizontalBarChart labels={labels()} clients={data?.clients} />
+    <Box padding={"0 2rem"} maxHeight={{base:440, xxl: "none"}}>
+      <HorizontalBarChart
+        labels={labels()}
+        clients={
+          filterSelected === FilterType.CLIENTS ? data?.clients : undefined
+        }
+        transactions={
+          filterSelected === FilterType.TRANSACTIONS
+            ? data?.transactions
+            : undefined
+        }
+        money={
+          filterCashSelected === FilterType.MONEY ? data?.money : undefined
+        }
+        cashback={
+          filterCashSelected === FilterType.CASHBACK
+            ? data?.cashback
+            : undefined
+        }
+      />
     </Box>
   );
 };
