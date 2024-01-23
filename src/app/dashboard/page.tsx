@@ -1,12 +1,15 @@
 "use client";
-import React, { lazy } from "react";
+import React, { lazy, useState } from "react";
 import { Box } from "@mui/material";
+import { SwitchType } from "@/interfaces/input.type";
 
 export default function Dashboard() {
+  const [switchMode, setSwitchMode] =useState<SwitchType>(SwitchType.GRAPHIC)
+
   return (
-    <Box sx={{ display: "flex", padding: "2rem" }}>
+    <Box display={'flex'} padding={'2rem'} gap={'25px'}>
       <MainContainer />
-      <Box sx={{ width: "20%" }}>asds dasd</Box>
+      <Aside switchMode={switchMode} setSwitchMode={setSwitchMode}/>
     </Box>
   );
 }
@@ -14,5 +17,10 @@ export default function Dashboard() {
 const MainContainer = lazy(() =>
   import("../../components/MainContainer").then((el) => ({
     default: el.MainContainer,
+  }))
+);
+const Aside = lazy(() =>
+  import("../../components/Aside").then((el) => ({
+    default: el.Aside,
   }))
 );
