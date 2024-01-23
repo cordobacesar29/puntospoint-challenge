@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { ReactQueryProvider } from "./ReactQueryProvider";
 import { Colors } from "./utils/Colors";
+import { GoogleAnalytics } from "./utils/GoogleAnalytics";
 
 const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
@@ -17,6 +18,7 @@ export default function RootLayout({
   return (
     <ReactQueryProvider>
       <html lang="en" style={{backgroundColor: Colors.bg_color_primary}}>
+        <GoogleAnalytics GA_TRAKING_ID={process.env.GA_TRAKING_ID as string} />
         <body className={inter.className}>{children}</body>
       </html>
     </ReactQueryProvider>
