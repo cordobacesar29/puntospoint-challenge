@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <ReactQueryProvider>
       <html lang="en" style={{backgroundColor: Colors.bg_color_primary}}>
-        <GoogleAnalytics GA_TRAKING_ID={process.env.GA_TRAKING_ID as string} />
+        <GoogleAnalytics GA_TRAKING_ID={'G-95E3RZE0J0'} />
         <body className={inter.className}>{children}</body>
       </html>
     </ReactQueryProvider>
