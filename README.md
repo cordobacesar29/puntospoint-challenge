@@ -1,8 +1,8 @@
 ## Getting Started
 First, clone the proyect: 
-
+```bash
 git clone https://github.com/cordobacesar29/puntospoint-challenge.git
-
+```
 
 Then, run the server:
 
