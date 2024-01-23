@@ -5,16 +5,20 @@ import { Dispatch, SetStateAction } from "react";
 import { InputType } from "@/interfaces/input.type";
 
 interface Props {
-  setInputSelected: Dispatch<SetStateAction<InputType>>
-  inputSelected: InputType | null
+  setInputSelected: Dispatch<SetStateAction<InputType>>;
+  inputSelected: InputType | null;
 }
-export const GraphicInputList = ({inputSelected, setInputSelected}:Props) => {
+export const GraphicInputList = ({
+  inputSelected,
+  setInputSelected,
+}: Props) => {
   return (
     <Box display={"flex"} alignItems={"center"} justifyContent={"space-around"}>
       <Box display={"flex"} gap={"12px"}>
         {inputList.map((el) => {
           return (
             <Box
+              key={el.value}
               padding={"12px"}
               borderRadius={"8px"}
               bgcolor={
