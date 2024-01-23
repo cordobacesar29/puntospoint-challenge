@@ -1,5 +1,5 @@
 import { Colors } from "@/app/utils/Colors";
-import { Box, Card, Collapse, Typography } from "@mui/material";
+import { Box, Collapse } from "@mui/material";
 import BarChartIcon from "@mui/icons-material/BarChart";
 import StarHalfSharpIcon from "@mui/icons-material/StarHalfSharp";
 import { SwitchChip } from "./SwitchChip";
@@ -17,7 +17,7 @@ interface Props {
 }
 export const Aside = ({ switchMode, setSwitchMode }: Props) => {
   const [showPulses, setShowPulses] = useState<boolean>(true);
-  const { data, error, isLoading } = useQuery({
+  const { data, isLoading } = useQuery({
     queryKey: ["pulse"],
     queryFn: () => getData("pulse" as InputType),
   });
