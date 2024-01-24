@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { ReactQueryProvider } from "./ReactQueryProvider";
+import { ReactQueryProvider } from "../provider/ReactQueryProvider";
 import { Colors } from "./utils/Colors";
 import GoogleAnalytics from "@bradgarropy/next-google-analytics"
 

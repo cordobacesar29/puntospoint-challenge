@@ -1,9 +1,8 @@
+import { UnderConstruction } from '@/components/UnderConstruction'
 import React from 'react'
 
 function HomePage() {
-  return (
-    <div>client page</div>
-  )
+  return <UnderConstruction/>
 }
 
 export default HomePage
