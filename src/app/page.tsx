@@ -1,22 +1,9 @@
-import { Box, Button, Typography } from "@mui/material";
-import Link from "next/link";
-import React from "react";
-import { ROUTES } from "./utils/routes";
+import React from 'react'
 
-export default function HomePage() {
+function HomePage() {
   return (
-    <Box
-      display={"flex"}
-      flexDirection={"column"}
-      width={"100%"}
-      height={"100vh"}
-      alignItems={"center"}
-      justifyContent={"center"}
-    >
-      <Typography>Bienvenidos a mi proyecto. 👨‍💻</Typography>
-      <Link href={ROUTES.DASHBOARD}>
-        <Button>Ir al dashboard</Button>
-      </Link>
-    </Box>
-  );
+    <div>page</div>
+  )
 }
+
+export default HomePage
