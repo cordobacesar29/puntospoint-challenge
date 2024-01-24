@@ -14,6 +14,7 @@ import { Colors } from "@/app/utils/Colors";
 import { usePathname } from "next/navigation";
 import { ExpandLess, ExpandMore } from "@mui/icons-material";
 import LogoutIcon from "@mui/icons-material/Logout";
+import { ROUTES } from "@/app/utils/routes";
 
 export const Navbar = () => {
   const pathname = usePathname();
@@ -59,7 +60,7 @@ export const Navbar = () => {
           );
         })}
       </Box>
-      <Box sx={{ width: "20%" }}>
+      <Box>
         <List
           component="nav"
           aria-labelledby="nested-list-subheader"
@@ -113,7 +114,7 @@ export const Navbar = () => {
 const links = [
   {
     name: "Dashboard",
-    href: "/dashboard",
+    href: ROUTES.DASHBOARD,
   },
   {
     name: "Clientes",
@@ -121,6 +122,6 @@ const links = [
   },
   {
     name: "Reglas de acumulación",
-    href: "dashboard/accumulation-rules",
+    href: "/dashboard/accumulation-rules",
   },
 ];

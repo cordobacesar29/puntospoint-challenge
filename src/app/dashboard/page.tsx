@@ -7,7 +7,7 @@ export default function Dashboard() {
   const [switchMode, setSwitchMode] =useState<SwitchType>(SwitchType.GRAPHIC)
 
   return (
-    <Box display={'flex'} padding={'2rem'} gap={'25px'}>
+    <Box display={'flex'} padding={'2rem'}>
       <MainContainer />
       <Aside switchMode={switchMode} setSwitchMode={setSwitchMode}/>
     </Box>

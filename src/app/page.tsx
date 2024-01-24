@@ -1,9 +1,23 @@
-import React from 'react'
+import Link from "next/link";
+import React from "react";
+import { ROUTES } from "./utils/routes";
 
-function HomePage() {
+export default function HomePage() {
   return (
-    <div>page</div>
-  )
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          width: '100%',
+          height: '100vh',
+          alignItems: 'center',
+          justifyContent: 'center'
+        }}
+      >
+        <p>Bienvenidos a mi proyecto. 👨‍💻</p>
+        <Link href={ROUTES.DASHBOARD}>
+          Ir al dashboard
+        </Link>
+      </div>
+  );
 }
-
-export default HomePage
