@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { ReactQueryProvider } from "./ReactQueryProvider";
 import { Colors } from "./utils/Colors";
-import { GoogleAnalytics } from "./utils/GoogleAnalytics";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
@@ -17,8 +17,20 @@ export default function RootLayout({
 }) {
   return (
     <ReactQueryProvider>
-      <html lang="en" style={{backgroundColor: Colors.bg_color_primary}}>
-        <GoogleAnalytics GA_TRAKING_ID={'G-95E3RZE0J0'} />
+      <html lang="en" style={{ backgroundColor: Colors.bg_color_primary }}>
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=G-95E3RZE0J0`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+          window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', "G-95E3RZE0J0");
+        `}
+        </Script>
         <body className={inter.className}>{children}</body>
       </html>
     </ReactQueryProvider>
