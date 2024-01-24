@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { ROUTES } from "./utils/routes";
 
-function HomePage() {
+export default function HomePage() {
   return (
     <Box
       display={"flex"}
@@ -20,5 +20,3 @@ function HomePage() {
     </Box>
   );
 }
-
-export default HomePage;
