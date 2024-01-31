@@ -15,12 +15,12 @@ export default function Dashboard() {
 }
 
 const MainContainer = lazy(() =>
-  import("../../components/MainContainer").then((el) => ({
+  import("@/components/MainContainer").then((el) => ({
     default: el.MainContainer,
   }))
 );
 const Aside = lazy(() =>
-  import("../../components/Aside").then((el) => ({
+  import("@/components/Aside").then((el) => ({
     default: el.Aside,
   }))
 );

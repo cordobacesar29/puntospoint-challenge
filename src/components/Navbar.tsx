@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
 import {
-  Container,
   List,
   Box,
   ListItemButton,
@@ -15,11 +14,13 @@ import { usePathname } from "next/navigation";
 import { ExpandLess, ExpandMore } from "@mui/icons-material";
 import LogoutIcon from "@mui/icons-material/Logout";
 import { ROUTES } from "@/app/utils/routes";
+import { signIn, useSession, signOut } from "next-auth/react";
 
 export const Navbar = () => {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
-
+  const {data: session} = useSession()
+  
   const handleClick = () => {
     setOpen(!open);
   };
@@ -83,7 +84,7 @@ export const Navbar = () => {
               <ListItemButton sx={{ pl: 4 }}>
                 <ListItemText primary="Editar perfil" />
               </ListItemButton>
-              <ListItemButton sx={{ pl: 4 }}>
+              <ListItemButton sx={{ pl: 4 }} onClick={()=> signOut({callbackUrl: ROUTES.HOME})}>
                 <ListItemIcon>
                   <LogoutIcon />
                 </ListItemIcon>
