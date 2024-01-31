@@ -17,7 +17,12 @@ export const MainContainer = () => {
     useState<FilterType | null>(null);
 
   return (
-    <Box width={"75%"} display={"flex"} flexDirection={"column"} gap={"30px"}>
+    <Box
+      width={{ xs: "100%", md: "75%" }}
+      display={"flex"}
+      flexDirection={"column"}
+      gap={"30px"}
+    >
       <GraphicInputList
         inputSelected={inputSelected}
         setInputSelected={setInputSelected}

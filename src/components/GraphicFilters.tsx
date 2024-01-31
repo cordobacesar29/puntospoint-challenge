@@ -17,7 +17,13 @@ export const GraphicFilters = ({
   setFilterSelected,
 }: Props) => {
   return (
-    <Box display={"flex"} padding={"0 2rem"} justifyContent={"space-between"}>
+    <Box
+      display={"flex"}
+      padding={"0 2rem"}
+      justifyContent={{ xs: "center", md: "space-between" }}
+      flexWrap={"wrap"}
+      gap={{xs: '1rem', md:'auto'}}
+    >
       <Box display={"flex"} gap={"12px"}>
         <FilterChip
           bgColor={
@@ -27,9 +33,7 @@ export const GraphicFilters = ({
           }
           label={filters[0].label}
           value={filters[0].value}
-          onClick={() =>
-            setFilterSelected?.(filters[0].value)
-          }
+          onClick={() => setFilterSelected?.(filters[0].value)}
           filterCashSelected={filterSelected}
         />
         <FilterChip
@@ -40,9 +44,7 @@ export const GraphicFilters = ({
           }
           label={filters[1].label}
           value={filters[1].value}
-          onClick={() =>
-            setFilterSelected?.(filters[1].value)
-          }
+          onClick={() => setFilterSelected?.(filters[1].value)}
           filterCashSelected={filterSelected}
         />
       </Box>

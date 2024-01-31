@@ -47,9 +47,13 @@ export const ChartContainer = ({
     }
   };
 
-  if(isLoading) return <Loading/>
+  if (isLoading) return <Loading />;
   return (
-    <Box padding={"0 2rem"} maxHeight={{base:440, xxl: "none"}}>
+    <Box
+      display={"flex"}
+      padding={{ xs: "0", md: "0 2rem" }}
+      justifyContent={"center"}
+    >
       <HorizontalBarChart
         labels={labels()}
         clients={

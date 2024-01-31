@@ -1,23 +1,39 @@
-import Link from "next/link";
-import React from "react";
-import { ROUTES } from "./utils/routes";
+"use client";
+import { signIn, useSession } from "next-auth/react";
+import { Button } from "@mui/material";
+import { SessionStateType } from "@/interfaces/session.state.type";
+import Loading from "@/components/Loading";
 
 export default function HomePage() {
-  return (
-      <div
-        style={{
-          display: 'flex',
-          flexDirection: 'column',
-          width: '100%',
-          height: '100vh',
-          alignItems: 'center',
-          justifyContent: 'center'
-        }}
-      >
+  const { status } = useSession();
+
+  const renderContent = () => {
+    if ((status as SessionStateType) === SessionStateType.LOADING) {
+      return <Loading />;
+    }
+    return (
+      <>
         <p>Bienvenidos a mi proyecto. 👨‍💻</p>
-        <Link href={ROUTES.DASHBOARD}>
-          Ir al dashboard
-        </Link>
-      </div>
+        <Button
+          onClick={() => signIn(undefined, { callbackUrl: "/dashboard" })}
+        >
+          Sign In
+        </Button>
+      </>
+    );
+  };
+  return (
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        width: "100%",
+        height: "100vh",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
+      {renderContent()}
+    </div>
   );
 }

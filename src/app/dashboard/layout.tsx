@@ -1,10 +1,10 @@
 import { Navbar } from "@/components/Navbar";
 
-export default function Layout ({children} : {children : React.ReactNode}) {
+export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <>
-      <Navbar/>
+    <div style={{width: '100%'}}>
+      <Navbar />
       {children}
-    </>
-  )
+    </div>
+  );
 }
