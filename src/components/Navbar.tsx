@@ -7,7 +7,7 @@ import {
   ListItemText,
   Collapse,
   ListItemIcon,
-  Avatar
+  Avatar,
 } from "@mui/material";
 import Link from "next/link";
 import { Colors } from "@/app/utils/Colors";
@@ -64,13 +64,15 @@ export const Navbar = () => {
           aria-labelledby="nested-list-subheader"
           sx={{ width: "max-content", minWidth: "320px" }}
         >
-          <ListItemButton onClick={handleClick}>
-            <ListItemIcon>
-              <Avatar src={session?.user?.image ?? ""} alt="avatar" />
-            </ListItemIcon>
-            <ListItemText primary={session?.user?.name} />
-            {open ? <ExpandLess /> : <ExpandMore />}
-          </ListItemButton>
+          {session?.user?.image && (
+            <ListItemButton onClick={handleClick}>
+              <ListItemIcon>
+                <Avatar src={session?.user?.image} alt="avatar" />
+              </ListItemIcon>
+              <ListItemText primary={session?.user?.name} />
+              {open ? <ExpandLess /> : <ExpandMore />}
+            </ListItemButton>
+          )}
           <Collapse in={open} timeout="auto" unmountOnExit>
             <List
               component="div"
