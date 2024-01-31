@@ -1,5 +1,13 @@
 import { Colors } from "@/app/utils/Colors";
-import { Box, Typography } from "@mui/material";
+import {
+  Box,
+  FormControl,
+  InputLabel,
+  MenuItem,
+  Select,
+  SelectChangeEvent,
+  Typography,
+} from "@mui/material";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import { Dispatch, SetStateAction } from "react";
 import { InputType } from "@/interfaces/input.type";
@@ -12,9 +20,13 @@ export const GraphicInputList = ({
   inputSelected,
   setInputSelected,
 }: Props) => {
+  const handleChange = (event: SelectChangeEvent) => {
+    setInputSelected(event.target.value as InputType);
+  };
+
   return (
     <Box display={"flex"} alignItems={"center"} justifyContent={"space-around"}>
-      <Box display={"flex"} gap={"12px"}>
+      <Box display={{ xs: "none", md: "flex" }} gap={"12px"}>
         {inputList.map((el) => {
           return (
             <Box
@@ -35,6 +47,24 @@ export const GraphicInputList = ({
             </Box>
           );
         })}
+      </Box>
+      <Box display={{ xs: "flex", md: "none" }}>
+        <FormControl fullWidth size="small">
+          <InputLabel id="demo-simple-select-label">Filtros</InputLabel>
+          <Select
+            value={inputSelected ?? undefined}
+            label="Filtros"
+            onChange={handleChange}
+          >
+            {inputList.map((el) => {
+              return (
+                <MenuItem key={el.value} value={el.value}>
+                  {el.label}
+                </MenuItem>
+              );
+            })}
+          </Select>
+        </FormControl>
       </Box>
       <Box
         display={"flex"}

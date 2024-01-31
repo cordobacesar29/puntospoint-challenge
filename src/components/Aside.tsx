@@ -22,9 +22,14 @@ export const Aside = ({ switchMode, setSwitchMode }: Props) => {
     queryFn: () => getData("pulse" as InputType),
   });
   return (
-    <Box width={"25%"} display={"flex"} flexDirection={"column"} gap={"32px"}>
+    <Box
+      width={{ xs: "100%", md: "25%" }}
+      display={"flex"}
+      flexDirection={"column"}
+      gap={"32px"}
+    >
       <Box
-        display={"flex"}
+        display={{ xs: "none", md: "flex" }}
         justifyContent={"space-between"}
         height={"max-content"}
         alignItems={"center"}
@@ -65,9 +70,9 @@ export const Aside = ({ switchMode, setSwitchMode }: Props) => {
       </Box>
       {data && (
         <Collapse in={showPulses} timeout="auto" unmountOnExit>
-          <PulseCard data={data.Diciembre} isLoading={isLoading}/>
-          <PulseCard data={data.Noviembre} isLoading={isLoading}/>
-          <PulseCard data={data.Octubre} isLoading={isLoading}/>
+          <PulseCard data={data.Diciembre} isLoading={isLoading} />
+          <PulseCard data={data.Noviembre} isLoading={isLoading} />
+          <PulseCard data={data.Octubre} isLoading={isLoading} />
         </Collapse>
       )}
     </Box>

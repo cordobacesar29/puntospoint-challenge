@@ -4,12 +4,15 @@ import { Box } from "@mui/material";
 import { SwitchType } from "@/interfaces/input.type";
 
 export default function Dashboard() {
-  const [switchMode, setSwitchMode] =useState<SwitchType>(SwitchType.GRAPHIC)
+  const [switchMode, setSwitchMode] = useState<SwitchType>(SwitchType.GRAPHIC);
 
   return (
-    <Box display={'flex'} padding={'2rem'}>
+    <Box
+      display={{ xs: "column", md: "flex" }}
+      padding={{ xs: "8px", md: "2rem" }}
+    >
       <MainContainer />
-      <Aside switchMode={switchMode} setSwitchMode={setSwitchMode}/>
+      <Aside switchMode={switchMode} setSwitchMode={setSwitchMode} />
     </Box>
   );
 }

@@ -3,7 +3,6 @@ import { Inter } from "next/font/google";
 import { ReactQueryProvider } from "./provider/ReactQueryProvider";
 import { Colors } from "./utils/Colors";
 import GoogleAnalytics from "@bradgarropy/next-google-analytics";
-import { Navbar } from "@/components/Navbar";
 import NextAuthProvider from "@/app/provider/NextAuthProvider";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -21,10 +20,11 @@ export default function RootLayout({
     <ReactQueryProvider>
       <html lang="en" style={{ backgroundColor: Colors.bg_color_primary }}>
         <GoogleAnalytics measurementId="G-95E3RZE0J0" />
-        <body className={inter.className}>
-          <NextAuthProvider>
-            {children}
-          </NextAuthProvider>
+        <body
+          className={inter.className}
+          style={{ width: "100%", margin: 0 }}
+        >
+          <NextAuthProvider>{children}</NextAuthProvider>
         </body>
       </html>
     </ReactQueryProvider>

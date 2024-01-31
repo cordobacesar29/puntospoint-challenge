@@ -27,7 +27,7 @@ export const Navbar = () => {
   return (
     <Box display={"flex"} alignItems={"center"}>
       <Box
-        display={{ base: "none", md: "flex" }}
+        display={{ xs: "none", md: "flex" }}
         gap={"25px"}
         justifyContent={"center"}
         width={"80%"}
@@ -58,11 +58,11 @@ export const Navbar = () => {
           );
         })}
       </Box>
-      <Box>
+      <Box width={{xs: '100%', md: 'auto'}}>
         <List
           component="nav"
           aria-labelledby="nested-list-subheader"
-          sx={{ width: "max-content", minWidth: "320px" }}
+          sx={{ width: {xs:'100%',md:"max-content"}, minWidth: "320px" }}
         >
           {session?.user?.image && (
             <ListItemButton onClick={handleClick}>
@@ -81,6 +81,7 @@ export const Navbar = () => {
                 backgroundColor: Colors.bg_color_primary,
                 width: "max-content",
                 minWidth: "320px",
+                zIndex:'99999'
               }}
             >
               <ListItemButton sx={{ pl: 4 }}>
@@ -95,20 +96,6 @@ export const Navbar = () => {
                 </ListItemIcon>
                 <ListItemText primary="Cerrar sesión" />
               </ListItemButton>
-              <Box
-                display={{ base: "flex", md: "none" }}
-                flexDirection={"column"}
-              >
-                {links.map((el) => {
-                  return (
-                    <ListItemButton sx={{ pl: 4 }} key={el.name}>
-                      <Link style={{ textDecoration: "none" }} href={el.href}>
-                        <ListItemText primary={el.name} />
-                      </Link>
-                    </ListItemButton>
-                  );
-                })}
-              </Box>
             </List>
           </Collapse>
         </List>
